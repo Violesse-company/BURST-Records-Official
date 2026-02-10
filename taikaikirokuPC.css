@@ -1,0 +1,258 @@
+:root {
+  --bg: #242424;
+  --panel: #000000;
+  --text: #eaeaea;
+  --sub: #ffffff;
+  --accent: #b30000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.app {
+  width: 390px;   /* iPhone 14基準 */
+  height: 844px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.header {
+  border-bottom: 1px solid #222;
+  padding: 30px 20px;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header .sub {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  border-bottom: 1px solid #222;
+}
+
+.hero h2 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--sub);
+  font-size: 14px;
+}
+
+/* ===== Main ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.records-section h3 {
+  font-size: 22px;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+  margin-bottom: 25px;
+}
+
+/* ===== Weight Filter ===== */
+.weight-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.weight-filter button {
+  background: transparent;
+  border: 1px solid #333;
+  color: var(--sub);
+  padding: 15px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.weight-filter button:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.weight-filter button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ===== Records ===== */
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.record {
+  background: var(--panel);
+  border: 1px solid #222;
+  padding: 20px;
+}
+
+.record h4 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: var(--accent);
+}
+
+.record p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.level {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text);
+}
+
+/* ===== Footer ===== */
+.footer {
+  border-top: 1px solid #222;
+  padding: 25px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--sub);
+}
+
+/* 既存CSSはそのまま使ってOK */
+
+/* ===== Lift Filter ===== */
+.kategori {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.kategori button {
+  background: transparent;
+  border: 1px solid #333;
+  color: var(--sub);
+  padding: 15px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.kategori button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* 既存CSSはそのまま使ってOK */
+
+/* ===== Lift Filter ===== */
+.lift-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.lift-filter button {
+  background: transparent;
+  border: 1px solid #333;
+  color: var(--sub);
+  padding: 15px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.lift-filter button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ===== Header ===== */
+.header {
+  border-bottom: 1px solid #222;
+  padding: 30px 20px;
+  position: relative; /* ← これ重要 */
+}
+
+/* ===== 大会記録 Button ===== */
+.apply-btn {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.apply-btn:hover {
+  background: var(--accent);
+}
+
+/* ===== taikai Button ===== */
+.taikai-btn {
+  position: absolute;
+  top: 10px;
+  right: 111px;
+
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.taikai-btn:hover {
+  background: var(--accent);
+}
+/* ===== PC向け Button ===== */
+.sumaho-btn {
+  position: absolute;
+  top: 10px;
+  right: 290px;
+
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  color: #fff;
+  border: 1px solid #2600ff;
+  padding: 15px 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.sumaho:hover {
+  background: var(--accent);
+}

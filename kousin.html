@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>公式記録申請 | Powerlifting Records</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --panel: #151515;
+      --text: #ffffff;
+      --accent: #c91d1d;
+      --sub: #888;
+    }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 全要素のサイズ計算を安定させる */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 横スクロール完全禁止 + 縦のみ許可 */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
+a {
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: var(--bg);
+}
+
+    /* ===== Header ===== */
+    header {
+      background: #000;
+      border-bottom: 2px solid var(--accent);
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid #333;
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+
+    /* ===== Main ===== */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-left: 5px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: var(--sub);
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    /* ===== Notice ===== */
+    .notice {
+      background: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .notice ul {
+      margin: 10px 0 0 20px;
+    }
+
+    .notice li {
+      margin-bottom: 6px;
+    }
+
+        /* ===== kousin ===== */
+    .kousin {
+      background: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .kousin ul {
+      margin: 10px 0 0 20px;
+    }
+
+    .kousin li {
+      margin-bottom: 6px;
+    }
+
+    /* ===== Form ===== */
+    .form-box {
+      background: var(--panel);
+      border: 1px solid #333;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1100px;
+      border: none;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 13px;
+      padding: 30px 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>BURSTレコード更新</h1>
+  <a href="index.html">記録一覧へ戻る</a>
+</header>
+
+<main>
+  <div class="title">レコード記録更新</div>
+
+  <div class="desc">
+    本ページは、当ジムが管理するパワーリフティング記録への
+    記録申請を行うための専用フォームです。
+  </div>
+
+  <div class="notice">
+    <strong>更新の注意事項</strong>
+    <ul>
+      <li>更新については記録申請番号、記録登録番号、同意者名が必要です。</li>
+      <li>全て記入必須となります。必ず全て記入して送信してください。</li>
+      <li>記入欄にはメールアドレス必須となります。</li>
+      <li>記録申請番号、記録登録番号は絶対に公開しないでください。</li>
+      <li>更新の際にメールをお送りしますので使用できるメールアドレを利用してください。</li>
+    </ul>
+  </div>
+
+  <div class="form-box">
+<iframe
+  src="https://docs.google.com/forms/d/e/1FAIpQLScA4I35-eJ7O_oDOlprklrNI4t5wZCDHdX3AdHvtA6SFNGm2w/viewform?usp=publish-editor"
+  width="100%"
+  height="1100"
+  frameborder="0">
+</iframe>
+
+
+<footer>
+  © Powerlifting Records Committee
+</footer>
+
+</body>
+</html>

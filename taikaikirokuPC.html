@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>パワーリフティングジム 公式サイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="taikaikirokuPC.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <h1>BURSTメンバー大会 <nav>レコード</nav></h1>
+    <span class="sub">公式 ジム内記録システム</span>
+  </div>
+</header>
+</div>
+
+    <!-- PC向けボタン -->
+<a href="taikaikirokusumaho.html" class="sumaho-btn">
+  スマホ向け
+</a>
+
+    <!-- 記録申請ボタン -->
+<a href="fo-mu.html" class="apply-btn">
+  記録申請
+</a>
+    <!-- BURST内レコードボタン -->
+<a href="index.html" class="taikai-btn">
+  BURST内レコード
+</a>
+
+<section class="hero">
+  <h2>BURSTメンバー<nav>大会レコード記録</nav></h2>
+  <p>当ジム独自記録</p>
+</section>
+
+<main class="container">
+  <section class="records-section">
+    <h3>認定記録一覧</h3>
+     <nav><h5>記録申請はトップの右上より<h5></nav>
+
+    <!-- 種目フィルター -->
+    <div class="lift-filter">
+      <button data-lift="all" class="active">全種目</button>
+      <button data-lift="スクワット">スクワット</button>
+      <button data-lift="ノーギアベンチプレス">ベンチプレス</button>
+      <button data-lift="デッドリフト">デッドリフト</button>
+      <button data-lift="フルギアベンチプレス">フルギアベンチプレス</button>
+    </div>
+
+    <!-- カテゴリーフィルター -->
+    <div class="kategori">
+      <button data-kategori="all" class="active">全カテゴリー</button>
+      <button data-kategori="一般">一般</button>
+      <button data-kategori="サブジュニア">サブジュニア</button>
+      <button data-kategori="ジュニア">ジュニア</button>
+      <button data-kategori="マスターズ1">マスターズ1</button>
+      <button data-kategori="マスターズ2">マスターズ2</button>
+      <button data-kategori="マスターズ3">マスターズ3</button>
+      <button data-kategori="マスターズ4">マスターズ4</button>
+      <button data-kategori="マスターズ5">マスターズ5</button>
+    </div>
+
+    <!-- 階級フィルター -->
+    <div class="weight-filter">
+      <button data-bw="all" class="active">全階級</button>
+      <button data-bw="47">47kg級</button>
+      <button data-bw="52">52kg級</button>
+      <button data-bw="57">57kg級</button>
+      <button data-bw="59">59kg級</button>
+      <button data-bw="63">63kg級</button>
+      <button data-bw="66">66kg級</button>
+      <button data-bw="69">69kg級</button>
+      <button data-bw="74">74kg級</button>
+      <button data-bw="76">76kg級</button>
+      <button data-bw="83">83kg級</button>
+      <button data-bw="84">84kg級</button>
+      <button data-bw="84+">84kg超級</button>
+      <button data-bw="93">93kg級</button>
+      <button data-bw="105">105kg級</button>
+      <button data-bw="120">120kg級</button>
+      <button data-bw="120+">120kg超級</button>
+    </div>
+
+    <div id="records" class="records-grid"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>
+    本記録は当ジム独自の会員の記録です。<br>
+    IPF・JPA等の公式競技記録ではありません。<br>
+    記録は全て本物の審判によって認定されています。<br>
+    当記録は全て送信主の同意を得て掲載しています。
+  </p>
+</footer>
+
+<script src="taikai.js"></script>
+</body>
+</html>

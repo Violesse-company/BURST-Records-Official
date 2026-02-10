@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>公式記録申請 | Powerlifting Records</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --panel: #151515;
+      --text: #ffFfff;
+      --accent: #c91d1d;
+      --sub: #888;
+    }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 全要素のサイズ計算を安定させる */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 横スクロール完全禁止 + 縦のみ許可 */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
+    /* ===== Header ===== */
+    header {
+      background: #000;
+      border-bottom: 2px solid var(--accent);
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid #333;
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+
+    /* ===== Main ===== */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .title {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-left: 5px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: var(--sub);
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    /* ===== Notice ===== */
+    .notice {
+      background: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .notice ul {
+      margin: 10px 0 0 20px;
+    }
+
+    .notice li {
+      margin-bottom: 6px;
+    }
+
+        /* ===== kousin ===== */
+    .kousin {
+      background: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .kousin ul {
+      margin: 10px 0 0 20px;
+    }
+
+    .kousin li {
+      margin-bottom: 6px;
+    }
+
+    /* ===== Form ===== */
+    .form-box {
+      background: var(--panel);
+      border: 1px solid #333;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1100px;
+      border: none;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 13px;
+      padding: 30px 10px;
+    }
+
+    .kousin-link {
+        color: var(--text);
+        border: 1px solid #333;
+        background: var(--text);
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>BURSTレコード申請</h1>
+  <a href="index.html">記録一覧へ戻る</a>
+</header>
+
+<main>
+  <div class="title">レコード記録申請</div>
+
+  <div class="desc">
+    本ページは、当ジムが管理するパワーリフティング記録への
+    記録申請を行うための専用フォームです。
+  </div>
+
+  <div class="notice">
+    <strong>申請前の注意事項</strong>
+    <ul>
+      <li>重量・名前・階級・種目・性別・申請日の入力、記入が可能な方</li>
+      <li>認定審判の判定が成功であること（公式大会の審判である事）</li>
+      <li>証明をできる動画、ビデオをSNSで投稿してURLを入力してください(音声あり、審判の声が聞こえる程度)</li>
+      <li>合成または不正行為を行なった記録申請は不正が判明した場合、記録は無効となります</li>
+      <li><u>不正行為は主に審判の判定を成功に誘導する、尻をつけない状態の試技など</u></li>
+      <li><u>合成、不正行為をしたプレーの申請を数回繰り返した場合強制的に記録を拒否します。</u></li>
+      <li>審査には数日〜数週間かかる場合があります</li>
+    </ul>
+  </div>
+
+    <div class="kousin">
+    <strong>更新の方法</strong>
+    <ul>
+      <li>更新については記録申請番号、記録登録番号、同意者名が必要です。</li>
+      <li>全て記入必須となります。必ず全て記入して送信してください。</li>
+      <li>記入欄にはメールアドレス必須となります。</li>
+      <div class="kousin-link">
+      <a href="kousin.html">更新する</a>
+      </div>
+    </ul>
+  </div>
+
+  <div class="form-box">
+<iframe
+  src="https://docs.google.com/forms/d/e/1FAIpQLScB9iBzR95DvfHkmLzcjkYHRNljiOvmSvkeqZfhh42sM0wJTQ/viewform?embedded=true"
+  width="100%"
+  height="1100"
+  frameborder="0">
+</iframe>
+
+
+<footer>
+  © Powerlifting Records Committee
+</footer>
+
+</body>
+</html>
